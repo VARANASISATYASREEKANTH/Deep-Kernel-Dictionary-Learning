@@ -1,0 +1,14 @@
+x = scale(x);
+kernaldens = KernelDensity().fit(x)
+print(kernaldens)
+KernelDensity(algorithm='auto', atol=0, bandwidth=1.0, breadth_first=True,
+              kernel='gaussian', leaf_size=40, metric='euclidean',
+              metric_params=None, rtol=0);
+scores = kernaldens.score_samples(x);
+thresh = quantile(scores, .01);
+print(thresh);
+index = where(scores <= thresh);
+values = x[index];
+plt.plot(x_ax, x);
+plt.scatter(index,values, color='r');
+plt.show();

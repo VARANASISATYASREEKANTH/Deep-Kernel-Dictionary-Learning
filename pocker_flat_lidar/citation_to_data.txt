@@ -1,0 +1,1 @@
+Rich Collins, Geophysical Institute. (2018) Data from the CEDAR Madrigal database. Available from https://w3id.org/cedar?experiment_list=experiments/2018/pfl/19oct18&file_list=pfl20181018_7004.hdf5
